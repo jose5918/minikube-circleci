@@ -16,8 +16,4 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - e2e_approval:
-          type: approval
-      - build:
-          requires:
-            - e2e_approval
+      - build
